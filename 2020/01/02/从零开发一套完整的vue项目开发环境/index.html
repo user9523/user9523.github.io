@@ -6,21 +6,43 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>小楼昨夜又东风</title>
+  <title>从零开发一套完整的vue项目开发环境 | 小楼昨夜又东风</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="小楼昨夜又东风">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="从零开发一套完整的vue项目开发环境不管是工作需要还是面试加分，vue技术栈已经成为前端开发工程师必备的计数点。接下来，将从零开发一套完整的vue开发环境，提供给需要的小伙伴观看及复习。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零开发一套完整的vue项目开发环境">
+<meta property="og:url" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/index.html">
 <meta property="og:site_name" content="小楼昨夜又东风">
+<meta property="og:description" content="从零开发一套完整的vue项目开发环境不管是工作需要还是面试加分，vue技术栈已经成为前端开发工程师必备的计数点。接下来，将从零开发一套完整的vue开发环境，提供给需要的小伙伴观看及复习。">
 <meta property="og:locale" content="zh">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecbd8b12466d7-1577976462410">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecdda799f50ee">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecea123f80f3b">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecf77fef02b2e">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecf77fef02b2e">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16ced1b4cbdf377c">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4843082ec35e2">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/12/28/16f4843082ec35e2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4853d8733c804">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4874f11a6119e">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f487aede04dab7">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f488bd67016954">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4891671be8eaf">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f489a6091c0cd0">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48c374c200db6">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48dacbf93491a">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48e1621c3aaee">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48a4dc0721cc8">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48e5c9e7fcd29">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4d9d9c8e791e1">
+<meta property="og:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f61cc3a89320c3">
+<meta property="article:published_time" content="2020-01-02T13:48:30.695Z">
+<meta property="article:modified_time" content="2020-01-02T15:03:34.357Z">
 <meta property="article:author" content="小楼昨夜又东风">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecbd8b12466d7-1577976462410">
   
     <link rel="alternative" href="/atom.xml" title="小楼昨夜又东风" type="application/atom+xml">
   
@@ -199,25 +221,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-从零开发一套完整的vue项目开发环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-从零开发一套完整的vue项目开发环境" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" target="_blank">从零开发一套完整的vue项目开发环境</a>
-  
+    <h1 class="article-title" itemprop="name">
+      从零开发一套完整的vue项目开发环境
     </h1>
   
 
 
   
   
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" class="archive-article-date">
         <time datetime="2020-01-02T13:48:30.695Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
 </a>
@@ -225,6 +247,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2.8k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">11分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -232,13 +275,330 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h1 id="从零开发一套完整的vue项目开发环境"><a href="#从零开发一套完整的vue项目开发环境" class="headerlink" title="从零开发一套完整的vue项目开发环境"></a>从零开发一套完整的vue项目开发环境</h1><p>不管是工作需要还是面试加分，vue技术栈已经成为前端开发工程师必备的计数点。接下来，将从零开发一套完整的vue开发环境，提供给需要的小伙伴观看及复习。<br><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecbd8b12466d7-1577976462410" alt="img"></p>
-    
-    <a class="article-more-a" href="/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/#more">more >></a>
-    
-    
+<a id="more"></a>
+
+<h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><hr>
+<p>彻底Vue官方脚手架vue-cli帮助我们初始化做了那些事，通过webpack4.x帮我们完成哪些常见功能：</p>
+<ol>
+<li>es6/7/8/9等高级语法转换成es5</li>
+<li>stylus/less/scss等css预处理器准换成css</li>
+<li>解析字体font、图片（img/png…）等静态资源</li>
+<li>压缩js、css等文件</li>
+<li>自动添加css各大浏览器厂商前缀</li>
+<li>定义环境变量</li>
+<li>抽离公共代码</li>
+<li>项目热更新和懒加载</li>
+<li>区别生产环境和开发环境</li>
+<li>每次打包删除上一次打包记录</li>
+<li>…</li>
+</ol>
+<h3 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h3><hr>
+<blockquote>
+<p> 1.检查node 环境配置</p>
+</blockquote>
+<p>先本地全局安装node环境，vue的运行时依赖于<code>node</code> 的<code>npm</code> 的管理工具来实现的，<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node下载地址</a> 。 下载好node之后，打开cmd管理工具，输入 <code>node -v</code> 回车，查看node版本号，出现版本号则说明安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v npm -v</span><br></pre></td></tr></table></figure>
+
+<p>​                         <img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecdda799f50ee" alt="img"></p>
+<p>​                                                                        版本号</p>
+<blockquote>
+<ol start="2">
+<li>初始化项目目录</li>
+</ol>
+</blockquote>
+<p>在命令行依次输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir my-vue-cli 新建项目目录</span><br><span class="line">cd my-vue-cli&#x2F; 切换到项目目录</span><br><span class="line">npm init 生成项目的一些信息，最终生成一个package.json文件。注意：可以输入npm init -y可以不用按回车</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecea123f80f3b" alt="效果图"></p>
+<p>​                                                                操作效果图</p>
+<blockquote>
+<ol start="3">
+<li>安装webpack</li>
+</ol>
+</blockquote>
+<p><code>webpack</code> 是一个模块打包机，自动分析项目依赖的模块以及一些浏览器不能直接装换的高级语法等转换成浏览器可以解析的<code>js.css</code>文件等。在项目根目录本地安装<code>webpack</code>，本项目将使用<code>webpack4.x</code>版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack webapck-cl -D</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecf77fef02b2e" alt="效果图">)<img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16cecf77fef02b2e" alt="效果图"></p>
+<blockquote>
+<p>4.初始化项目目录和文件</p>
+</blockquote>
+<p>在项目根目录新建一下文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">src: 存放项目源码的目录</span><br><span class="line">index.js: 需要被 webpack 编译的文件</span><br><span class="line">build： 存放项目的webpack配置文件</span><br><span class="line">webpack.config.js 项目的webpack核心配置文件</span><br><span class="line">index.html: 项目打包后自动将打包的文件添加在该文件里面</span><br></pre></td></tr></table></figure>
+
+<p>​                            <img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16ced1b4cbdf377c" alt="效果图"> </p>
+<ul>
+<li><p>添加webpack配置文件的基本信息</p>
+<ol>
+<li>mode：模式，development开发环境、production生产环境</li>
+<li>entry：项目的打包的入口文件</li>
+<li>output： 项目的打包后输出文件</li>
+<li>module：模块，在webpack中所有文件接模块，解析css、js、图片以及字体图标等</li>
+<li>plugins:插件，用来扩展webpack功能</li>
+<li>…  </li>
+</ol>
+</li>
+<li><p>在package.json文件<code>scripts</code>属性中添加运行<code>npm run build</code>打包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;build&quot;:&quot;webpack --config .&#x2F;build&#x2F;webpack.config.js&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在index.js中添加测试代码验证webpack打包是否正确</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sun</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> sum = sum(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">console</span>.log(sum)</span><br></pre></td></tr></table></figure>
+
+<p>如果项目中dist目录生成了一个bundle.js 文件， 说明webpack打包正确</p>
+<p> <img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4843082ec35e2" alt="img">)<img src="https://user-gold-cdn.xitu.io/2019/12/28/16f4843082ec35e2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="效果图"></p>
+</li>
+</ul>
+<h3 id="配置核心功能"><a href="#配置核心功能" class="headerlink" title="配置核心功能"></a>配置核心功能</h3><blockquote>
+<ol>
+<li>ES6/7/8/9等高级语法转换成ES5</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>在index.js中添加ES6/7/8/9等高级语法的代码测试代码验证webpack是否能将其装换成ES5等让浏览器能解析的低级语法</p>
+<p>1.安装相关依赖</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-loader @babel&#x2F;core @babel&#x2F;preset-ent -D</span><br><span class="line"></span><br><span class="line">babel-loader是将ES6等高级语法转换为能让浏览器能够解析的低级语法</span><br><span class="line">@babel&#x2F;core是babel的核心模块，编译器。提供转换的API</span><br><span class="line">@babel&#x2F;prest-env 可以根据配置的目标浏览器或者运行环境来自动将ES2015+的代码转换为es5</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>修改核心配置文件webpack.config.js</p>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4853d8733c804" alt="效果图"></p>
+</li>
+</ol>
+<p>然后运行<code>npm run build</code>,就可以看到为我们输入的ES6+等高级语法被转换为ES5了。注意：<code>babel-loader</code>只会将ES6/7/8等高级语法转换为ES5语法，但是对新api并不会转换。比如Promise、Iterator、Set、Proxy、Symbol等全局对象，以及一些定义在全局对象上的方法（比如Object.assign）都不会转码。此时，我们必须使用babel-polyfill，为当前环境提供一个垫片。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install @babel&#x2F;polyfill -S</span><br><span class="line">   </span><br><span class="line">babel-polyfill是解决babel-loader不能对新的api进行转换为当前环境添加一个垫片</span><br></pre></td></tr></table></figure>
+
+<p>重点：当我们执行打包之后，打包的文件里含有大量的重复代码，那么我们需要提供统一的模块化的helper来减少helper函数的重复输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install @babel&#x2F;runtime @babel&#x2F;plugin-transform-runtime -D</span><br><span class="line">  </span><br><span class="line">  @babel&#x2F;runtime就是提供统一的模块化的helper, 使用能大大减少打包编译后的体积</span><br><span class="line">  @babel&#x2F;plugin-transform-runtime它会帮我自动动态require @babel&#x2F;runtime中的内容</span><br><span class="line">  注意：还有一些常见的babel:</span><br><span class="line">  @babel&#x2F;plugin-proposal-decorators将es6+中更高级的特性转化---装饰器</span><br><span class="line">  @babel&#x2F;plugin-proposal-class-properties将es6中更高级的API进行转化---类</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4874f11a6119e" alt="效果图"></p>
+<p>​                                                    修改效果图</p>
+<ol start="3">
+<li>在index.js 中编写es6+等高级语法</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fn = <span class="function"><span class="params">()</span> =&gt;</span>&#123;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'箭头函数'</span>)</span><br><span class="line">&#125;</span><br><span class="line">fn()</span><br><span class="line"><span class="keyword">let</span> pormise = <span class="keyword">new</span> pormise(<span class="function">(<span class="params">resolve,reject</span>) =&gt;</span>&#123;</span><br><span class="line">	setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">	 resolve(<span class="number">123</span>)</span><br><span class="line">	&#125;,<span class="number">1000</span>)</span><br><span class="line">&#125;)</span><br><span class="line">promiser.then(<span class="function"><span class="params">res</span> =&gt;</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f487aede04dab7" alt="效果图"></p>
+<blockquote>
+<ol start="2">
+<li>stylus/less/scss等css预处理器转换成css</li>
+</ol>
+</blockquote>
+<ul>
+<li>在项目中src目录中添加index.less文件，并在index.js文件中引入其文件</li>
+</ul>
+<p>以下就以less预处理为例，详细介绍其用法，其余两种类似：</p>
+<ol>
+<li><p>安装相关依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install stylus stylus-loader less less-loader sass-loader node-sass css-loader style-loader -D</span><br><span class="line"></span><br><span class="line">css-loader主要的作用是解析css文件, 像@import等动态语法</span><br><span class="line">style-loader主要的作用是解析的css文件渲染到html的style标签内</span><br><span class="line">stylus、less、sass是CSS的常见预处理器</span><br><span class="line">stylus-loader、less-loader、sass-loader主要是将其对应的语法转换成css语法</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<ol start="2">
+<li><p>修改核心配置文件webpack.config.js文件<img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f488bd67016954" alt="效果图"></p>
+</li>
+<li><p>添加index.less文件</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@color: red;</span><br><span class="line">#div1 &#123;</span><br><span class="line">    color: @color;</span><br><span class="line">    font-size: 36px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4891671be8eaf" alt="效果图"></p>
+<p>注意：css3 的许多特新来说，需要添加各种浏览器兼容前缀，开发过程中，这样加太麻烦，postcss b帮你自动添加各种浏览器前缀</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install postcss-loader autoprefixer -D</span><br><span class="line"></span><br><span class="line">postcss-loader autoprefixer 处理浏览器兼容，自动为css3的某些属性添加前缀</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f489a6091c0cd0" alt="效果图"></p>
+<blockquote>
+<ol start="3">
+<li>解析字体font、图片(jpg、png…)等静态资源</li>
+</ol>
+</blockquote>
+<ul>
+<li>项目中通常会使用图片、字体等静态资源，不使用对应的loader项目会报错</li>
+</ul>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install file-loader url-loader -D</span><br><span class="line"></span><br><span class="line">file-loader 可以用来帮助webpack打包处理一系列的图片文件；比如：.png 、 .jpg 、.jepg等     格式的图片。打包的图片会给每张图片都生成一个随机的hash值作为图片的名字</span><br><span class="line">url-loader 封装了file-loader,它的工作原理：1.文件大小小于limit参数，url-loader将会把	  文件转为Base64；2.文件大小大于limit，url-loader会调用file-loader进行处理，参数也会	直接传给file-loader</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改核心配置文件webpack.config.js<img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48c374c200db6" alt="效果图"></li>
+</ol>
+<blockquote>
+<ol start="4">
+<li>压缩打包后的js、css</li>
+</ol>
+</blockquote>
+<ul>
+<li>安装相关依赖</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install mini-css-extract-plugin -D</span><br><span class="line">&#x2F;&#x2F; or 或</span><br><span class="line">npm install extract-text-webpack-plugin@next -D &#x2F;&#x2F; 不推荐使用</span><br><span class="line">npm install optimize-css-assets-webpack-plugin -D</span><br><span class="line">npm install uglifyjs-webpack-plugin -D</span><br><span class="line">&#x2F;&#x2F; 扩展 消除未使用的css</span><br><span class="line">npm install purify-webpack purify-css -D</span><br></pre></td></tr></table></figure>
+
+<p>注意：在生产模式下，webpack自动将JS进行压缩。MiniCssExtractPlugin 推荐只用于生产环境，因为该插件在开发环境下会导致HMR功能缺失，所以日常开发中，还是用style-loader。 2. 修改核心配置文件webpack.config.js。 </p>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48dacbf93491a" alt="效果图"></p>
+<blockquote>
+<ol start="5">
+<li>常用选项以及插件的使用方法</li>
+</ol>
+</blockquote>
+<ul>
+<li>大家都习惯的Ctrl+S保存代码后就想浏览器自动刷行来更新我们的页面</li>
+</ul>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack-dev-server -D</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改核心配置文件webpack.config.js  <img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48e1621c3aaee" alt="效果图"></li>
+</ol>
+<ul>
+<li>通过html-webpack-plugin插件来创建html文件，并自动引入打包后的js文件</li>
+</ul>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install html-webpack-plugin -D</span><br><span class="line"></span><br><span class="line">html-webpack-plugin 主要有两个作用：1：为html文件中引入的外部资源如script、link动态每次compile后的hash,防止引用缓存的外部文件问题。2、可以生成创建html入口文件</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在项目根目录新建index.html文件</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改核心配置文件webpack.config.js</li>
+</ol>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48a4dc0721cc8" alt="效果图"></p>
+<ul>
+<li>通过clean-webpack-plugin插件来自动删除上一次打包的文件</li>
+</ul>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install clean-webpack-plugin -D</span><br><span class="line"></span><br><span class="line">clean-webpack-plugin是删除webpack打包后的文件夹以及文件</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改核心配置文件webpack.config.js</li>
+</ol>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f48e5c9e7fcd29" alt="效果图"></p>
+<h3 id="webpack识别-vue文件"><a href="#webpack识别-vue文件" class="headerlink" title="webpack识别.vue文件"></a>webpack识别.vue文件</h3><blockquote>
+<p>目前绝大多数的vue项目里核心业务代码都是.vue文件结尾的，但浏览器不支持.vue文件的解析，故需webpack将.vue文件装换为浏览器能识别的js文件。</p>
+</blockquote>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-loader vue-template-compiler cache-loader thread-loader -D</span><br><span class="line">npm install vue -S</span><br><span class="line"></span><br><span class="line">vue-loader 作用解析.vue文件</span><br><span class="line">vue-template-compiler 作用编译模板</span><br><span class="line">cache-loader 作用缓存loader编译的结果</span><br><span class="line">thread-loader 作用使用 worker 池来运行loader，每个 worker 都是一个 node.js 进程</span><br><span class="line">vue 一个用于构建用户界面渐进式的MVVM框架</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改核心配置文件webpack.config.js</li>
+</ol>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f4d9d9c8e791e1" alt="效果图"></p>
+<ol start="3">
+<li>在项目根目录新建App.vue文件</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        测试123</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>修改index.js</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import Vue from &#39;vue&#39;;</span><br><span class="line">import App from &#39;.&#x2F;App.vue&#39;;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">    render: h &#x3D;&gt; h(App)</span><br><span class="line">&#125;).$mount(&#39;#app&#39;)</span><br></pre></td></tr></table></figure>
+
+
+
+<p>通过以上操作后执行npm run build，则可以看到webpack将.vue文件解析为浏览器可以识别的js语法。也可以通过运行npm run dev看到浏览器页面上会渲染出123。</p>
+<h3 id="Vue集成VueRouter和Vuex"><a href="#Vue集成VueRouter和Vuex" class="headerlink" title="Vue集成VueRouter和Vuex"></a>Vue集成VueRouter和Vuex</h3><hr>
+<ol>
+<li>安装相关依赖</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-router vuex -S</span><br><span class="line"></span><br><span class="line">vue-router是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌</span><br><span class="line">vuex是一个专为 Vue.js 应用程序开发的状态管理模式</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>集成vue-router</li>
+</ol>
+<ul>
+<li>新建Home.vue和About.vue两个组件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Home.vue</span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        home1231</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">    name: &#39;Home&#39;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; About.vue</span><br><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        about</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">    name: &#39;About&#39;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>新增路由的配置文件 在项目的src目录里，新建/src/router/index.js。注意：在加载路由时，可以使用路由懒加载的方式进行加载组件</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span>;</span><br><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span>;</span><br><span class="line"><span class="comment">// import Home from '../views/Home.vue';</span></span><br><span class="line"><span class="comment">// import About from '../views/About.vue';</span></span><br><span class="line">Vue.use(VueRouter); <span class="comment">// 向Vue再注册路由</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">    mode: <span class="string">'hash'</span>,</span><br><span class="line">    routes: [</span><br><span class="line">        &#123;</span><br><span class="line">            path: <span class="string">'/Home'</span>,</span><br><span class="line">            name: <span class="string">'Home'</span>,</span><br><span class="line">            <span class="comment">// component: Home</span></span><br><span class="line">            component: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: "Home" */</span> <span class="string">'../views/Home.vue'</span>) <span class="comment">// 路由懒加载方式</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path: <span class="string">'/about'</span>,</span><br><span class="line">            name: <span class="string">'About'</span>,</span><br><span class="line">            <span class="comment">// component: About</span></span><br><span class="line">            component: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: 'About' */</span> <span class="string">'../views/About.vue'</span>)</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            path: <span class="string">'*'</span>, <span class="comment">// 匹配任何路由</span></span><br><span class="line">            redirect: <span class="string">'/Home'</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>修改index.js文件</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App.vue'</span></span><br><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">'./router'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  router, <span class="comment">// 新增</span></span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;).$mount(<span class="string">'#app'</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><hr>
+<ul>
+<li>引入Elment UI</li>
+<li>添加管理系统常见的布局 （左右布局+上面导航）</li>
+<li>…</li>
+</ul>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><hr>
+<p>感谢大家！希望大家工作顺利，技术越来越棒💪 </p>
+<p><img src="%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/16f61cc3a89320c3" alt=""></p>
 
     
 
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          小楼昨夜又东风
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2020/01/02/从零开发一套完整的vue项目开发环境/" title="从零开发一套完整的vue项目开发环境" target="_blank">http://yoursite.com/2020/01/02/从零开发一套完整的vue项目开发环境/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
     
 
   </div>
@@ -248,16 +608,76 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/02/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/29/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git使用指南</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -278,85 +698,14 @@
 
 
 
-  
-    <article id="post-git使用指南" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2019/12/29/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" target="_blank">git使用指南</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/12/29/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="archive-article-date">
-        <time datetime="2019-12-29T15:59:34.766Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-29</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Git 是什么<br>非常简单地说，Git 是一个快速、可扩展的分布式版本控制系统，它具有极为丰富的命令集，对内部系统提供了高级操作和完全访问。所谓版本控制系统 (VersionControl System)，从狭义上来说，它是软件项目开发过程中用于储存我们所写的代码所有修订版本的软件，但事实上我们可以将任何对项目有帮助的文档交付版本控制系统进行管理。</p>
-    
-    <a class="article-more-a" href="/2019/12/29/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/12/29/git%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-  
+
+
+
+
 
 
           </div>
@@ -396,8 +745,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
